@@ -28,3 +28,16 @@
     <div class="col-sm-12 col-md-6">
     </div>
   </div>
+<div class="links p-3">
+        <%= link_to "Back to Recipes", cocktails_path, class: "btn btn-warning" %>
+
+        <%= link_to "Edit Name", edit_cocktail_path(@cocktail), class: "btn btn-warning" %>
+
+        <%= link_to "Add Ingredients", new_cocktail_dose_path(@cocktail), class: "btn btn-warning" %>
+
+        <%= link_to "Delete",
+          cocktail_path(@cocktail),
+          method: :delete,
+          class: "btn btn-warning",
+          data: { confirm: "Are you sure?" } %>
+      </div>

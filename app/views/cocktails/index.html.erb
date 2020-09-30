@@ -1,36 +1,15 @@
 <div class="container">
   <h1>Cocktails Galooooore</h1>
-  <div class="cards-container">
-    <div class="card-deck">
-
-      <div class="card bg-dark text-white">
+  <div class="cards d-flex flex-wrap justify-content-center">
+    <% @cocktails.each do |cocktail| %>
+      <div class="card bg-dark text-white mb-4 mx-3" style="width: 20rem; height: 30rem;">
         <%= image_tag("exotic.jpg", class: "card-img") %>
         <div class="card-img-overlay">
-          <h5 class="card-title">Card title</h5>
-          link
-          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-          <p class="card-text">Last updated 3 mins ago</p>
+          <%= link_to cocktail_path(cocktail) do %>
+            <h5 class="card-title"><%= cocktail.name %></h5>
+          <% end %>
         </div>
       </div>
-
-      <div class="card bg-dark text-white">
-        <%= image_tag("strawberry.jpg", class: "card-img") %>
-        <div class="card-img-overlay">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-          <p class="card-text">Last updated 3 mins ago</p>
-        </div>
-      </div>
-
-      <div class="card bg-dark text-white">
-        <%= image_tag("yellow drink.jpg", class: "card-img") %>
-        <div class="card-img-overlay">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-          <p class="card-text">Last updated 3 mins ago</p>
-        </div>
-      </div>
-
-    </div>
+    <% end %>
   </div>
 </div>
