@@ -14,9 +14,14 @@ Cocktail.destroy_all
 
 puts "Creating cocktails..."
 
+
 mango_mule = {name: "Mango Mule"}
+
 citrus_fizz = {name: "Citrus Fizz"}
+
 le_Wagon = {name: "Le Wagon on the Beach"}
+
+
 
 [mango_mule,
 citrus_fizz,
