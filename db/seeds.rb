@@ -18,6 +18,9 @@ puts "Creating cocktails..."
 
 mango_mule = {name: "Mango Mule"}
 
+          products.photos.attach(io: file, filename: 'product.png', content_type: 'image/png')
+
+
 citrus_fizz = {name: "Citrus Fizz"}
 
 le_Wagon = {name: "Le Wagon on the Beach"}

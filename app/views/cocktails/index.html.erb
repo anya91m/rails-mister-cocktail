@@ -14,9 +14,6 @@
       <div class="card text-white mb-4 mx-3" style="width: 20rem; height: 30rem;">
         <%= cl_image_tag cocktail.photo.key, height: 481, width: 320, class: "cover" %>
          <div class="card-img-overlay">
-          <%= link_to cocktail_path(cocktail) do %>
-            <h2 class="card-title lato" style="position: absolute; bottom: 0;"><%= cocktail.name %></h2>
-          <% end %>
         </div>
       </div>
     <% end %>
