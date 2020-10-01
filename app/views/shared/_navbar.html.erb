@@ -1,15 +1,8 @@
-<div class="nav">
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#">Navbar</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+<nav class="navbar navbar-light bg-light justify-content-between">
+  <%= link_to root_path do %>
+    <i class="fas fa-cocktail"></i>
+  <% end %>
+  <h3 class="mt-1 title">Cocktail Kitt</h3>
 
-      <form class="form-inline my-2 my-lg-0 ml-auto">
-        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success my-2 my-sm-0 mr-2" type="submit">Search</button>
-      </form>
-      <%= link_to "Add New Cocktail", new_cocktail_path, class: "btn btn-outline-warning ml-auto"%>
-      <!-- <button type="button" class="btn btn-outline-warning ml-auto">Add New Cocktail</button> -->
-  </nav>
-</div>
+  <%= link_to "Add New Cocktail", new_cocktail_path, class: "btn btn-outline-warning"%>
+</nav>
