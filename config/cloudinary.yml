@@ -1,0 +1,18 @@
+development:
+  cloud_name: dowwgiej0
+  api_key: '315145843258996'
+  api_secret: hfR20f9XnuS_0jNSqS91_LqvdGA
+  enhance_image_tag: true
+  static_file_support: false
+production:
+  cloud_name: dowwgiej0
+  api_key: '315145843258996'
+  api_secret: hfR20f9XnuS_0jNSqS91_LqvdGA
+  enhance_image_tag: true
+  static_file_support: true
+test:
+  cloud_name: dowwgiej0
+  api_key: '315145843258996'
+  api_secret: hfR20f9XnuS_0jNSqS91_LqvdGA
+  enhance_image_tag: true
+  static_file_support: false
